@@ -222,6 +222,6 @@
         </table>
     </div>
   </div>
-
+@include('modals.modal_acusacion')
 @endsection
 

@@ -1,6 +1,12 @@
 @extends('layouts.plantilla.newgame')
 @section('componentes')
 
+  @if (Session::has('mensaje'))
+    <div class="alert alert-primary alert-dismissible" role="alert">
+        {{  Session::get('mensaje') }}
+        
+    </div>
+    @endif
 
     <div class="backgound">
       <img class="d-block w-100" src="img/1.jpg" alt="First slide" heigth="100px" style="background-image:url()">

@@ -45,6 +45,7 @@ Route::group( ['middleware'=>'auth'],function () {
 
 Route::resource('game', GameController::class)->names('game');
 Route::post('game/store2', [GameController::class,'store2'])->name('game.store2');
+Route::post('game/store3', [GameController::class,'store3'])->name('game.store3');
 
 Auth::routes();
 

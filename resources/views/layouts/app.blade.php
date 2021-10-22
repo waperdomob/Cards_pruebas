@@ -18,6 +18,9 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- Livewire -->
+    @livewireStyles
+    @livewireScripts
 </head>
 <body>
     <div id="app">
@@ -105,5 +108,9 @@
             @yield('content')
         </main>
     </div>
+    <script src="js/3.1.1.jquery.min.js"></script>
+    <script src="js/1.3.7.tether.min.js"></script>
+    <script src="js/4.0.0-alpha.5.bootstrap.min.js"></script>
+    <script src="js/laracrud.js"></script>
 </body>
 </html>
